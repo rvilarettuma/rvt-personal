@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rvt-personal/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/rvt-personal/static/js/main.31404ae8.chunk.js",
+    "main.js.map": "/rvt-personal/static/js/main.31404ae8.chunk.js.map",
+    "runtime-main.js": "/rvt-personal/static/js/runtime-main.7203881e.js",
+    "runtime-main.js.map": "/rvt-personal/static/js/runtime-main.7203881e.js.map",
+    "static/js/2.122d5af7.chunk.js": "/rvt-personal/static/js/2.122d5af7.chunk.js",
+    "static/js/2.122d5af7.chunk.js.map": "/rvt-personal/static/js/2.122d5af7.chunk.js.map",
+    "static/js/3.fda9f305.chunk.js": "/rvt-personal/static/js/3.fda9f305.chunk.js",
+    "static/js/3.fda9f305.chunk.js.map": "/rvt-personal/static/js/3.fda9f305.chunk.js.map",
+    "index.html": "/rvt-personal/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/rvt-personal/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.122d5af7.chunk.js.LICENSE.txt": "/rvt-personal/static/js/2.122d5af7.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/rvt-personal/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7203881e.js",
+    "static/js/2.122d5af7.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.31404ae8.chunk.js"
+  ]
+}
