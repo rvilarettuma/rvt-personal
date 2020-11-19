@@ -1,6 +1,6 @@
 body {
-    background: #EFF1ED;
-    color: #1E221A;
+    background: #1F2124;
+    color: #F68657;
 }
 
 h1 {
@@ -8,4 +8,5 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.5vw;
     font-size: 50px;
+    color: #f6b352;
 }
