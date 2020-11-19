@@ -1,3 +1,8 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 @font-face {
   font-family: 'futura-bold';
   src: local('futura-bold'), url(./fonts/futura-bold.ttf) format('truetype');
