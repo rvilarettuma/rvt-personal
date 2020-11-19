@@ -1,4 +1,6 @@
 body {
+  text-align: center;
+  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -6,4 +8,14 @@ body {
 @font-face {
   font-family: 'futura-bold';
   src: local('futura-bold'), url(./fonts/futura-bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'futura-book';
+  src: local('Futura-Book-BT'), url(./fonts/Futura-Book-BT.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'futura-medium';
+  src: local('futura-medium'), url(./fonts/futura-medium.woff) format('woff');
 }

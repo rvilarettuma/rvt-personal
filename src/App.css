@@ -1,6 +1,6 @@
 body {
-    background: #1F2124;
-    color: #F68657;
+    background: #0f0e17;
+    color: #a7a9be;
 }
 
 h1 {
@@ -8,5 +8,42 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.5vw;
     font-size: 50px;
-    color: #f6b352;
+    color: #fffffe;
+}
+
+h2 {
+    font-family: 'futura-medium';
+    text-transform: lowercase;
+    letter-spacing: 0.75vw;
+    font-size: 38px;
+    color: #f25f4c
+}
+
+h3 {
+    font-family: 'futura-bold';
+    letter-spacing: 0.5vw;
+    font-size: 28px;
+    color: #e53170
+}
+
+h4 {
+    font-family: 'futura-bold';
+    letter-spacing: 0.5vw;
+    font-size: 21px;
+    color: #F68657
+}
+
+h5 {
+    font-family: 'futura-book';
+    letter-spacing: 0.5vw;
+    font-size: 28px;
+    color: #F68657
+}
+
+h6 {
+    font-family: 'futura-bold';
+    text-transform: uppercase;
+    letter-spacing: 1.25vw;
+    font-size: 28px;
+    color: #F68657
 }
