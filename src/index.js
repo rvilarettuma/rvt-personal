@@ -4,7 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './fonts/futura-bold.ttf';
-import './fonts/futura-medium.woff'
+import './fonts/futura-medium.woff';
+import './fonts/Futura-Book-BT.woff';
 
 ReactDOM.render(
   <React.StrictMode>
