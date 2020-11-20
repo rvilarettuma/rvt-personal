@@ -1,11 +1,10 @@
-body {
-    margin: 0;
-    background: #0f0e17;
-    color: #a7a9be;
-}
+
 
 .App-header {
-    padding: 2em;
+    padding: 1em;
+    background-image: repeating-linear-gradient(to right, #020826, #020826 1px, transparent 1px, transparent);
+    background-size: 25px 25px;
+    background: #ff8906;
 }
 
 h1 {
@@ -21,28 +20,34 @@ h2 {
     text-transform: lowercase;
     letter-spacing: 0.75vw;
     font-size: 38px;
-    color: #fffffe
+    color: #fffffe;
+}
+
+.shadow {
+    max-width: max-content;
+    background-color: #f25042;
 }
 
 h3 {
     font-family: 'futura-bold';
     letter-spacing: 0.5vw;
     font-size: 28px;
-    color: #e53170
+    color: #fffffe;
+    transform:translate(20px, -10px);
 }
 
 h4 {
     font-family: 'futura-bold';
     letter-spacing: 0.5vw;
     font-size: 21px;
-    color: #F68657
+    color: #fffffe;
 }
 
 h5 {
     font-family: 'futura-book';
     letter-spacing: 0.5vw;
     font-size: 28px;
-    color: #F68657
+    color: #fffffe;
 }
 
 h6 {
@@ -50,10 +55,11 @@ h6 {
     text-transform: uppercase;
     letter-spacing: 1.25vw;
     font-size: 28px;
-    color: #F68657
+    color: #fffffe;
 }
 
 p {
     font-size: 16px;
     line-height: 24px;
+    color: #a7a9be;
 }
