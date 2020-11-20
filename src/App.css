@@ -2,9 +2,6 @@
 
 .App-header {
     padding: 1em;
-    background-image: repeating-linear-gradient(to right, #0d0d0d, #0d0d0d 1px, transparent 1px, transparent);
-    background-size: 25px 25px;
-    background: #ff8e3c;
 }
 
 h1 {
