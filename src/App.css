@@ -2,13 +2,9 @@
 
 .App-header {
     padding: 1em;
-    background-image: repeating-linear-gradient(to right, #020826, #020826 1px, transparent 1px, transparent);
+    background-image: repeating-linear-gradient(to right, #0d0d0d, #0d0d0d 1px, transparent 1px, transparent);
     background-size: 25px 25px;
-    background: #ff8906;
-}
-
-.tabbar {
-    background-color: #ff8906;
+    background: #ff8e3c;
 }
 
 h1 {
@@ -16,7 +12,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.5vw;
     font-size: 50px;
-    color: #fffffe;
+    color: #0d0d0d;
 }
 
 h2 {
@@ -24,7 +20,7 @@ h2 {
     text-transform: lowercase;
     letter-spacing: 0.75vw;
     font-size: 38px;
-    color: #fffffe;
+    color: #0d0d0d;
 }
 
 .shadow {
@@ -36,22 +32,21 @@ h3 {
     font-family: 'futura-bold';
     letter-spacing: 0.5vw;
     font-size: 28px;
-    color: #fffffe;
-    transform:translate(20px, -10px);
+    color: #0d0d0d;
 }
 
 h4 {
     font-family: 'futura-bold';
     letter-spacing: 0.5vw;
     font-size: 21px;
-    color: #fffffe;
+    color: #0d0d0d;
 }
 
 h5 {
     font-family: 'futura-book';
     letter-spacing: 0.5vw;
     font-size: 28px;
-    color: #fffffe;
+    color: #0d0d0d;
 }
 
 h6 {
@@ -59,11 +54,11 @@ h6 {
     text-transform: uppercase;
     letter-spacing: 1.25vw;
     font-size: 28px;
-    color: #fffffe;
+    color: #0d0d0d;
 }
 
 p {
     font-size: 16px;
     line-height: 24px;
-    color: #a7a9be;
+    color: #2a2a2a;
 }

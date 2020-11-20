@@ -1,6 +1,5 @@
 import "./App.css";
 import { Container } from "@material-ui/core";
-import TabBar from './Application/TabBar';
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
           <h2>Student IT Administrator</h2>
           
         </header>
-        <TabBar/>
         <body>
           <h3>Biography</h3>
           <p>
