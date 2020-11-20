@@ -9,8 +9,9 @@ function App() {
         <header className="App-header">
           <h1>Richard Vilaret-Tuma</h1>
           <h2>Student IT Administrator</h2>
-          <TabBar/>
+          
         </header>
+        <TabBar/>
         <body>
           <h3>Biography</h3>
           <p>
