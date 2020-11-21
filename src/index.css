@@ -1,5 +1,9 @@
+html {
+  font-size: 100%;
+}
+
 body {
-  background: #f9f4ef;
+  background: #0d0d0d;
   margin-top: 2em;
   text-align: center;
   font-family: sans-serif;
