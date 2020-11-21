@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.2d3f8cf9.chunk.css",
-    "main.js": "/static/js/main.4fd2a355.chunk.js",
-    "main.js.map": "/static/js/main.4fd2a355.chunk.js.map",
+    "main.css": "/static/css/main.b98b6767.chunk.css",
+    "main.js": "/static/js/main.5ec03171.chunk.js",
+    "main.js.map": "/static/js/main.5ec03171.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b2502eda.js",
     "runtime-main.js.map": "/static/js/runtime-main.b2502eda.js.map",
     "static/js/2.7127060e.chunk.js": "/static/js/2.7127060e.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.2ab5aad6.chunk.js": "/static/js/3.2ab5aad6.chunk.js",
     "static/js/3.2ab5aad6.chunk.js.map": "/static/js/3.2ab5aad6.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.2d3f8cf9.chunk.css.map": "/static/css/main.2d3f8cf9.chunk.css.map",
+    "static/css/main.b98b6767.chunk.css.map": "/static/css/main.b98b6767.chunk.css.map",
     "static/js/2.7127060e.chunk.js.LICENSE.txt": "/static/js/2.7127060e.chunk.js.LICENSE.txt",
     "static/media/index.css": "/static/media/futura-medium.16cf191d.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.b2502eda.js",
     "static/js/2.7127060e.chunk.js",
-    "static/css/main.2d3f8cf9.chunk.css",
-    "static/js/main.4fd2a355.chunk.js"
+    "static/css/main.b98b6767.chunk.css",
+    "static/js/main.5ec03171.chunk.js"
   ]
 }
