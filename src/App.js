@@ -1,6 +1,7 @@
 import "./App.css";
 import { Container } from "@material-ui/core";
 import Bio from "./Application/Bio";
+import Projects from "./Application/Projects";
 
 function App() {
   return (
@@ -8,12 +9,10 @@ function App() {
       <Container maxWidth="lg">
         <header className="App-header">
           <h1>Richard Vilaret-Tuma</h1>
-          <h2>Adminstrator</h2>
+          <h2>SysAdmin, Developer, DevOps</h2>
         </header>
-        <body>
           <Bio/>
-          <h4>PROJECTS</h4>
-        </body>
+          <Projects/>
       </Container>
     </div>
   );

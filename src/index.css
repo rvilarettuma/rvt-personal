@@ -1,12 +1,6 @@
 html {
+  background: #FAF6F3;
   font-size: 100%;
-}
-
-body {
-  background: #F9F4EF;
-  margin-top: 2em;
-  text-align: center;
-  font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
