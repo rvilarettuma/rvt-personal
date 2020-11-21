@@ -22,8 +22,8 @@ body {
 }
 
 hr {
-  color: #fffffe;
-  background-color: #fffffe;
+  color: #0D0D0D;
+  background-color: #0D0D0D;
   height: 0.1em;
 }
 
@@ -33,7 +33,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   font-size: 3em;
-  color: #fffffe;
+  color: #0D0D0D;
 }
 
 h2 {
@@ -41,7 +41,7 @@ h2 {
   text-transform: lowercase;
   letter-spacing: 0.2rem;
   font-size: 38px;
-  color: #fffffe;
+  color: #0D0D0D;
 }
 
 .shadow {
@@ -53,21 +53,21 @@ h3 {
   font-family: "futura-bold";
   letter-spacing: 0.5;
   font-size: 28px;
-  color: #fffffe;
+  color: #0D0D0D;
 }
 
 h4 {
   font-family: "futura-bold";
   letter-spacing: 0.5;
   font-size: 21px;
-  color: #fffffe;
+  color: #0D0D0D;
 }
 
 h5 {
   font-family: "futura-book";
   letter-spacing: 0.5;
   font-size: 28px;
-  color: #fffffe;
+  color: #0D0D0D;
 }
 
 h6 {
@@ -75,12 +75,12 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 1.25;
   font-size: 28px;
-  color: #fffffe;
+  color: #0D0D0D;
 }
 
 p {
   font-family: "futura-book";
   font-size: 18px;
   line-height: 27px;
-  color: #94a1b2;
+  color: #0D0D0D;
 }
