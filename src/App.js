@@ -10,10 +10,15 @@ const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#FAF6F3',
-      contrastText: '#0D0D0D'
     },
     secondary: {
       main: '#516652',
+    },
+    background: {
+      paper: '#FAF6F3',
+    },
+    text: {
+      primary: 'rgba(13,13,13,0.87)',
     }
   },
   typography: {
@@ -23,38 +28,32 @@ const theme = createMuiTheme({
       textTransform: 'uppercase',
       letterSpacing: '0.5rem',
       fontSize: '3.125em',
-      color: '#0D0D0D',
     },
     h2: {
       fontFamily: "futura-medium",
       textTransform: 'lowercase',
       letterSpacing: '0.2rem',
       fontSize: '2.375em',
-      color: '#0D0D0D',
     },
     h3: {
       fontFamily: "futura-bold",
       letterSpacing: '0.5',
       fontSize: '1.75em',
-      color: '#0D0D0D',
     },
     h4: {
       fontFamily: "futura-bold",
       letterSpacing: '0.5',
       fontSize: '1.3125em',
-      color: '#0D0D0D'
     },
     body1: {
       fontFamily: "futura-book",
       fontSize: '1.125em',
       lineHeight: '1.6875rem',
-      color: '#0D0D0D'
     },
     subtitle1: {
       fontFamily: "futura-book",
       fontSize: '1.125em',
       lineHeight: '1.6875rem',
-      color: '#0D0D0D'
     }
   }
 });
