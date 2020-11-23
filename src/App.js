@@ -7,6 +7,15 @@ import Bio from "./Application/Bio";
 import Projects from "./Application/Projects";
 
 const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#FAF6F3',
+      contrastText: '#0D0D0D'
+    },
+    secondary: {
+      main: '#516652',
+    }
+  },
   typography: {
     h1: {
       whiteSpace: 'pre-line',
@@ -22,6 +31,30 @@ const theme = createMuiTheme({
       letterSpacing: '0.2rem',
       fontSize: '2.375em',
       color: '#0D0D0D',
+    },
+    h3: {
+      fontFamily: "futura-bold",
+      letterSpacing: '0.5',
+      fontSize: '1.75em',
+      color: '#0D0D0D',
+    },
+    h4: {
+      fontFamily: "futura-bold",
+      letterSpacing: '0.5',
+      fontSize: '1.3125em',
+      color: '#0D0D0D'
+    },
+    body1: {
+      fontFamily: "futura-book",
+      fontSize: '1.125em',
+      lineHeight: '1.6875rem',
+      color: '#0D0D0D'
+    },
+    subtitle1: {
+      fontFamily: "futura-book",
+      fontSize: '1.125em',
+      lineHeight: '1.6875rem',
+      color: '#0D0D0D'
     }
   }
 });
