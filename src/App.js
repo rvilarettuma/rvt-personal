@@ -11,8 +11,10 @@ function App() {
           <h1>Richard Vilaret-Tuma</h1>
           <h2>SysAdmin, Developer, DevOps</h2>
         </header>
-          <Bio/>
-          <Projects/>
+        <body>
+          <Bio />
+          <Projects />
+        </body>
       </Container>
     </div>
   );
