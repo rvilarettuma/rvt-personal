@@ -33,7 +33,7 @@ function App() {
       <Container maxWidth="lg">
         <header className="App-header">
           <Typography variant="h1">Richard Vilaret-Tuma</Typography>
-          <h2>SysAdmin, Developer, DevOps</h2>
+          <Typography variant="h2">SysAdmin, Developer, DevOps</Typography>
         </header>
         <Bio />
         <Projects />
