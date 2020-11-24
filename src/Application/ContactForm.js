@@ -74,8 +74,8 @@ class ContactForm extends Component {
               />
             </Grid>
             <Grid item>
-              <Button variant="contained" color="primary" endIcon={<Send />}>
-                Send
+              <Button variant="outlined" size="large" endIcon={<Send />}>
+                Submit
               </Button>
             </Grid>
           </Grid>
