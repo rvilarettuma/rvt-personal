@@ -34,6 +34,9 @@ theme = createMuiTheme({
       letterSpacing: '0.5rem',
       fontSize: '3.125em',
       color: 'rgba(13,13,13)',
+      '@media screen and (max-width: 820px)': {
+        fontSize: '2.375em',
+      }
     },
     h2: {
       fontFamily: "futura-medium",
@@ -41,30 +44,45 @@ theme = createMuiTheme({
       letterSpacing: '0.2rem',
       fontSize: '2.375em',
       color: 'rgba(13,13,13)',
+      '@media screen and (max-width: 820px)': {
+        fontSize: '1.75em',
+      }
     },
     h3: {
       fontFamily: "futura-bold",
       letterSpacing: '0.5',
       fontSize: '1.75em',
       color: 'rgba(13,13,13)',
+      '@media screen and (max-width: 820px)': {
+        fontSize: '1.3125em',
+      }
     },
     h4: {
       fontFamily: "futura-bold",
       letterSpacing: '0.5',
       fontSize: '1.3125em',
       color: 'rgba(13,13,13)',
+      '@media screen and (max-width: 820px)': {
+        fontSize: '1em',
+      }
     },
     body1: {
       fontFamily: "futura-book",
       fontSize: '1.125em',
       lineHeight: '1.6875rem',
       color: 'rgba(13,13,13)',
+      '@media screen and (max-width: 820px)': {
+        fontSize: '1em',
+      }
     },
     subtitle1: {
       fontFamily: "futura-book",
       fontSize: '1.125em',
       lineHeight: '1.6875rem',
       color: 'rgba(13,13,13)',
+      '@media screen and (max-width: 820px)': {
+        fontSize: '1em',
+      }
     }
   }
 });
