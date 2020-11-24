@@ -4,7 +4,6 @@ import Button from "@material-ui/core/Button";
 import Send from "@material-ui/icons/Send";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
-import Icon from "@material-ui/core/Icon";
 import axios from "axios";
 
 class ContactForm extends Component {
@@ -14,36 +13,36 @@ class ContactForm extends Component {
       name: "",
       email: "",
       message: "",
+      status: "",
     };
   }
 
-  onNameChange(event) {
-    this.setState({ name: event.target.value });
-  }
-  onEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
-  onMsgChange(event) {
-    this.setState({ message: event.target.value });
+  handleChange(event) {
+    const field = event.target.id;
+    if (field === "name") {
+      this.setState({ name: event.target.value });
+    } else if (field === "email") {
+      this.setState({ email: event.target.value });
+    } else if (field === "message") {
+      this.setState({ message: event.target.value });
+    }
   }
 
-  submitEmail(e) {
-    e.preventDefault();
+  handleSubmit(event) {
+    event.preventDefault();
+    this.setState({ status: "Sending" });
     axios({
       method: "POST",
-      url: "/send",
+      url: "http://localhost:5000",
       data: this.state,
     }).then((response) => {
-      if (response.data.status === "success") {
-        alert("Message Sent.");
-        this.resetForm();
-      } else if (response.data.status === "fail") {
-        alert("Message failed to send.");
+      if (response.data.status === "sent") {
+        alert("Message Sent");
+        this.setState({ name: "", email: "", message: "", status: "Submit" });
+      } else if (response.data.status === "failed") {
+        alert("Message Failed");
       }
     });
-  }
-  resetForm() {
-    this.setState({ name: "", email: "", subject: "", message: "" });
   }
 
   render() {
@@ -55,13 +54,30 @@ class ContactForm extends Component {
           </Typography>
           <hr />
         </div>
-        <form noValidate autoComplete="off" onSubmit={this.submitEmail.bind(this)} method="POST">
+        <form
+          noValidate
+          autoComplete="off"
+          onSubmit={this.handleSubmit.bind(this)}
+          method="POST"
+        >
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
-              <TextField fullWidth variant="filled" label="Name" value={this.state.name} onChange={this.onNameChange.bind(this)}/>
+              <TextField
+                fullWidth
+                variant="filled"
+                label="Name"
+                value={this.state.name}
+                onChange={this.handleChange.bind(this)}
+              />
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField fullWidth variant="filled" label="Email" value={this.state.email} onChange={this.onEmailChange.bind(this)}/>
+              <TextField
+                fullWidth
+                variant="filled"
+                label="Email"
+                value={this.state.email}
+                onChange={this.handleChange.bind(this)}
+              />
             </Grid>
             <Grid item xs={12}>
               <TextField
@@ -71,11 +87,17 @@ class ContactForm extends Component {
                 label="Message"
                 rows={4}
                 placeholder="Message"
-                value={this.state.message} onChange={this.onMsgChange.bind(this)}
+                value={this.state.message}
+                onChange={this.handleChange.bind(this)}
               />
             </Grid>
             <Grid item>
-              <Button type="submit" variant="outlined" size="large" endIcon={<Send />}>
+              <Button
+                type="submit"
+                variant="outlined"
+                size="large"
+                endIcon={<Send />}
+              >
                 Submit
               </Button>
             </Grid>

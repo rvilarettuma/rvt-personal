@@ -4,7 +4,7 @@ var nodemailer = require("nodemailer");
 var cors = require("cors");
 const creds = require("../config/config");
 
-nodemailer.createTransport({
+let transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   auth: {
