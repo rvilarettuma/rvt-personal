@@ -1,12 +1,14 @@
 import "./App.css";
 import { Container, Typography } from "@material-ui/core";
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
 import Bio from "./Application/Bio";
 import Projects from "./Application/Projects";
 
-const theme = createMuiTheme({
+let theme = createMuiTheme();
+theme = responsiveFontSizes(theme);
+theme = createMuiTheme({
   palette: {
     primary: {
       main: '#FAF6F3',
