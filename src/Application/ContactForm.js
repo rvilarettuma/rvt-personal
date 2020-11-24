@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import Send from "@material-ui/icons/Send";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
+import Icon from "@material-ui/core/Icon";
+import axios from "axios";
 
 class ContactForm extends Component {
   constructor(props) {
@@ -21,6 +25,25 @@ class ContactForm extends Component {
   }
   onMsgChange(event) {
     this.setState({ message: event.target.value });
+  }
+
+  submitEmail(e) {
+    e.preventDefault();
+    axios({
+      method: "POST",
+      url: "/send",
+      data: this.state,
+    }).then((response) => {
+      if (response.data.status === "success") {
+        alert("Message Sent.");
+        this.resetForm();
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    });
+  }
+  resetForm() {
+    this.setState({ name: "", email: "", subject: "", message: "" });
   }
 
   render() {
@@ -49,6 +72,11 @@ class ContactForm extends Component {
                 rows={4}
                 placeholder="Message"
               />
+            </Grid>
+            <Grid item>
+              <Button variant="contained" color="primary" endIcon={<Send />}>
+                Send
+              </Button>
             </Grid>
           </Grid>
         </form>
