@@ -5,6 +5,7 @@ import { ThemeProvider } from '@material-ui/styles';
 
 import Bio from "./Application/Bio";
 import Projects from "./Application/Projects";
+import ContactForm from "./Application/ContactForm";
 
 const theme = createMuiTheme({
   palette: {
@@ -96,6 +97,7 @@ function App() {
         </header>
         <Bio />
         <Projects />
+        <ContactForm />
       </Container>
     </div>
     </ThemeProvider>
