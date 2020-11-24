@@ -1,28 +1,29 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
-import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-}));
-
 class ContactForm extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      name: '',
-      email: '',
-      message: '',
-    }
+      name: "",
+      email: "",
+      message: "",
+    };
   }
-  
-  render(){
-    const classes = useStyles();
+
+  onNameChange(event) {
+    this.setState({ name: event.target.value });
+  }
+  onEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
+  onMsgChange(event) {
+    this.setState({ message: event.target.value });
+  }
+
+  render() {
     return (
       <div>
         <div className="subheader">
@@ -31,7 +32,7 @@ class ContactForm extends Component {
           </Typography>
           <hr />
         </div>
-        <form className={classes} noValidate autoComplete="off">
+        <form noValidate autoComplete="off">
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
               <TextField fullWidth variant="filled" label="Name" />
@@ -53,7 +54,7 @@ class ContactForm extends Component {
         </form>
       </div>
     );
-  } 
+  }
 }
 
 export default ContactForm;
