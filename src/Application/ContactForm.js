@@ -55,13 +55,13 @@ class ContactForm extends Component {
           </Typography>
           <hr />
         </div>
-        <form noValidate autoComplete="off">
+        <form noValidate autoComplete="off" onSubmit={this.submitEmail.bind(this)} method="POST">
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
-              <TextField fullWidth variant="filled" label="Name" />
+              <TextField fullWidth variant="filled" label="Name" value={this.state.name} onChange={this.onNameChange.bind(this)}/>
             </Grid>
             <Grid item xs={12} sm={6}>
-              <TextField fullWidth variant="filled" label="Email" />
+              <TextField fullWidth variant="filled" label="Email" value={this.state.email} onChange={this.onEmailChange.bind(this)}/>
             </Grid>
             <Grid item xs={12}>
               <TextField
@@ -71,10 +71,11 @@ class ContactForm extends Component {
                 label="Message"
                 rows={4}
                 placeholder="Message"
+                value={this.state.message} onChange={this.onMsgChange.bind(this)}
               />
             </Grid>
             <Grid item>
-              <Button variant="outlined" size="large" endIcon={<Send />}>
+              <Button type="submit" variant="outlined" size="large" endIcon={<Send />}>
                 Submit
               </Button>
             </Grid>
