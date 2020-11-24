@@ -6,9 +6,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import Bio from "./Application/Bio";
 import Projects from "./Application/Projects";
 
-let theme = createMuiTheme();
-theme = responsiveFontSizes(theme);
-theme = createMuiTheme({
+const theme = createMuiTheme({
   palette: {
     primary: {
       main: '#FAF6F3',
@@ -17,7 +15,7 @@ theme = createMuiTheme({
       main: '#516652',
     },
     background: {
-      paper: '#FAF6F3',
+      main: '#FAF6F3',
     },
     text: {
       primary: 'rgba(13,13,13,0.87)',
@@ -79,7 +77,7 @@ theme = createMuiTheme({
       fontFamily: "futura-book",
       fontSize: '1.125em',
       lineHeight: '1.6875rem',
-      color: 'rgba(13,13,13)',
+      color: 'rgba(13,13,13,0.54)',
       '@media screen and (max-width: 820px)': {
         fontSize: '1em',
       }
