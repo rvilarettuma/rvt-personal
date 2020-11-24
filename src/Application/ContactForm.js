@@ -17,23 +17,26 @@ class ContactForm extends Component {
     };
   }
 
-  handleChange(event) {
-    const field = event.target.id;
-    if (field === "name") {
-      this.setState({ name: event.target.value });
-    } else if (field === "email") {
-      this.setState({ email: event.target.value });
-    } else if (field === "message") {
-      this.setState({ message: event.target.value });
-    }
+  onNameChange(event) {
+    this.setState({ name: event.target.value });
+  }
+  onEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
+  onSubjectChange(event) {
+    this.setState({ subject: event.target.value });
+  }
+  onMsgChange(event) {
+    this.setState({ message: event.target.value });
   }
 
   handleSubmit(event) {
+    console.log(this.state);
     event.preventDefault();
     this.setState({ status: "Sending" });
     axios({
       method: "POST",
-      url: "http://localhost:5000",
+      url: "https://rvtuma.com:5000/contact",
       data: this.state,
     }).then((response) => {
       if (response.data.status === "sent") {
@@ -49,9 +52,7 @@ class ContactForm extends Component {
     return (
       <div>
         <div className="subheader">
-          <Typography variant="h3" h3>
-            Contact
-          </Typography>
+          <Typography variant="h3">Contact</Typography>
           <hr />
         </div>
         <form
@@ -66,8 +67,7 @@ class ContactForm extends Component {
                 fullWidth
                 variant="filled"
                 label="Name"
-                value={this.state.name}
-                onChange={this.handleChange.bind(this)}
+                onChange={(e) => this.onNameChange(e)}
               />
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -75,8 +75,7 @@ class ContactForm extends Component {
                 fullWidth
                 variant="filled"
                 label="Email"
-                value={this.state.email}
-                onChange={this.handleChange.bind(this)}
+                onChange={(e) => this.onEmailChange(e)}
               />
             </Grid>
             <Grid item xs={12}>
@@ -87,8 +86,7 @@ class ContactForm extends Component {
                 label="Message"
                 rows={4}
                 placeholder="Message"
-                value={this.state.message}
-                onChange={this.handleChange.bind(this)}
+                onChange={(e) => this.onMsgChange(e)}
               />
             </Grid>
             <Grid item>

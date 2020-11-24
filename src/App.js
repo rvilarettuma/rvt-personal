@@ -1,6 +1,6 @@
 import "./App.css";
 import { Container, Typography } from "@material-ui/core";
-import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
+import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
 import Bio from "./Application/Bio";

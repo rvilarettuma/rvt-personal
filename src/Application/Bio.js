@@ -5,7 +5,7 @@ function Bio(props) {
   return (
     <div>
       <div className="subheader">
-        <Typography variant="h3" h3>Biography</Typography>
+        <Typography variant="h3">Biography</Typography>
         <hr />
       </div>
       <div className="bio">
