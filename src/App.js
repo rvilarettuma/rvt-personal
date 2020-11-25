@@ -81,7 +81,7 @@ const theme = createMuiTheme({
       fontFamily: "futura-book",
       fontSize: '1.125em',
       lineHeight: '1.6875rem',
-      color: 'rgba(13,13,13,0.54)',
+      color: 'rgba(13,13,13,0.84)',
       '@media screen and (max-width: 820px)': {
         fontSize: '1em',
       }
