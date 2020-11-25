@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import Send from "@material-ui/icons/Send";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
+import Snackbar from '@material-ui/core/Snackbar';
 
 export default class ContactForm extends Component {
   constructor(props) {
@@ -11,6 +12,7 @@ export default class ContactForm extends Component {
     this.submitForm = this.submitForm.bind(this);
     this.state = {
       status: "",
+      open: false,
     };
   }
 
@@ -81,6 +83,7 @@ export default class ContactForm extends Component {
       if (xhr.status === 200) {
         form.reset();
         this.setState({ status: "SUCCESS" });
+        <Snackbar open={this.state.open} autoHideDuration={6000} onClose={this.handleClose}></Snackbar>
       } else {
         this.setState({ status: "ERROR" });
       }
