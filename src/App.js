@@ -7,6 +7,8 @@ import Bio from "./Application/Bio";
 import Projects from "./Application/Projects";
 import ContactForm from "./Application/ContactForm";
 
+
+
 const theme = createMuiTheme({
   palette: {
     primary: {
