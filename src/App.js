@@ -1,11 +1,13 @@
 import "./App.css";
-import { Container, Divider, Typography } from "@material-ui/core";
+import Container from "@material-ui/core/Container"
+import Typography from "@material-ui/core/Typography";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 
 import Bio from "./Application/Bio";
 import Projects from "./Application/Projects";
 import ContactForm from "./Application/ContactForm";
+import Footer from "./Application/Footer";
 
 const theme = createMuiTheme({
   palette: {
@@ -99,9 +101,7 @@ function App() {
         <Bio />
         <Projects />
         <ContactForm />
-        <footer>
-          <hr/>
-        </footer>
+        <Footer />
       </Container>
     </div>
     </ThemeProvider>
