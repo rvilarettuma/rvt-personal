@@ -7,6 +7,10 @@ import Grid from "@material-ui/core/Grid";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
 
+function Alert(props) {
+  return <MuiAlert elevation={6} variant="filled" {...props} />;
+}
+
 export default class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -18,7 +22,6 @@ export default class ContactForm extends Component {
   }
 
   render() {
-    const { status } = this.state;
     return (
       <div>
         <div className="subheader">
@@ -68,14 +71,36 @@ export default class ContactForm extends Component {
               />
             </Grid>
             <Grid item>
-                <Button
-                  type="submit"
-                  variant="outlined"
-                  size="large"
-                  endIcon={<Send />}
+              <Button
+                type="submit"
+                variant="outlined"
+                size="large"
+                endIcon={<Send />}
+              >
+                Submit
+              </Button>
+              {this.state.status === "SUCCESS" && (
+                <Snackbar
+                  open={this.state.open}
+                  autoHideDuration={6000}
+                  onClose={this.handleClose}
                 >
-                  Submit
-                </Button>
+                  <Alert onClose={this.handleClose} severity="success">
+                    Email sent successfully!
+                  </Alert>
+                </Snackbar>
+              )}
+              {this.state.status === "ERROR" && (
+                <Snackbar
+                  open={this.state.open}
+                  autoHideDuration={6000}
+                  onClose={this.handleClose}
+                >
+                  <Alert onClose={this.handleClose} severity="error">
+                    Error: Failed to send. Try again!
+                  </Alert>
+                </Snackbar>
+              )}
             </Grid>
           </Grid>
         </form>
@@ -94,29 +119,19 @@ export default class ContactForm extends Component {
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();
-        this.setState({ status: "SUCCESS" });
-        <Snackbar
-          open={this.state.open}
-          autoHideDuration={6000}
-          onClose={this.handleClose}
-        >
-          <Alert onClose={this.handleClose} severity="success">
-            Email sent successfully!
-          </Alert>
-        </Snackbar>;
+        this.setState({ status: "SUCCESS", open: true });
       } else {
-        this.setState({ status: "ERROR" });
-        <Snackbar
-          open={this.state.open}
-          autoHideDuration={6000}
-          onClose={this.handleClose}
-        >
-          <Alert onClose={this.handleClose} severity="error">
-            Error: Failed to send. Try again!
-          </Alert>
-        </Snackbar>;
+        this.setState({ status: "ERROR", open: true });
       }
     };
     xhr.send(data);
   }
+
+  handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    this.setState({ open: false });
+  };
 }
