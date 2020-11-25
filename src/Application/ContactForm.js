@@ -4,7 +4,8 @@ import Button from "@material-ui/core/Button";
 import Send from "@material-ui/icons/Send";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
-import Snackbar from '@material-ui/core/Snackbar';
+import Snackbar from "@material-ui/core/Snackbar";
+import MuiAlert from "@material-ui/lab/Alert";
 
 export default class ContactForm extends Component {
   constructor(props) {
@@ -24,7 +25,12 @@ export default class ContactForm extends Component {
           <Typography variant="h3">Contact</Typography>
           <hr />
         </div>
-        <form  action="https://formspree.io/f/xleowjdq" autoComplete="off" onSubmit={this.submitForm} method="POST">
+        <form
+          action="https://formspree.io/f/xleowjdq"
+          autoComplete="off"
+          onSubmit={this.submitForm}
+          method="POST"
+        >
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6}>
               <TextField
@@ -62,8 +68,14 @@ export default class ContactForm extends Component {
               />
             </Grid>
             <Grid item>
-              {status === "SUCCESS" ? <Typography variant="caption">Thanks!</Typography> : <Button type="submit" variant="outlined" size="large" endIcon={<Send />}>Submit</Button>}
-              {status === "ERROR" && <Typography variant="caption">Oops, there was an error!</Typography>}
+                <Button
+                  type="submit"
+                  variant="outlined"
+                  size="large"
+                  endIcon={<Send />}
+                >
+                  Submit
+                </Button>
             </Grid>
           </Grid>
         </form>
@@ -83,9 +95,26 @@ export default class ContactForm extends Component {
       if (xhr.status === 200) {
         form.reset();
         this.setState({ status: "SUCCESS" });
-        <Snackbar open={this.state.open} autoHideDuration={6000} onClose={this.handleClose}></Snackbar>
+        <Snackbar
+          open={this.state.open}
+          autoHideDuration={6000}
+          onClose={this.handleClose}
+        >
+          <Alert onClose={this.handleClose} severity="success">
+            Email sent successfully!
+          </Alert>
+        </Snackbar>;
       } else {
         this.setState({ status: "ERROR" });
+        <Snackbar
+          open={this.state.open}
+          autoHideDuration={6000}
+          onClose={this.handleClose}
+        >
+          <Alert onClose={this.handleClose} severity="error">
+            Error: Failed to send. Try again!
+          </Alert>
+        </Snackbar>;
       }
     };
     xhr.send(data);
