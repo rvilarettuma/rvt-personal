@@ -27,6 +27,7 @@ export default class ContactForm extends Component {
             <Grid item xs={12} sm={6}>
               <TextField
                 name="name"
+                id="name"
                 fullWidth
                 variant="filled"
                 label="Name"
@@ -37,6 +38,7 @@ export default class ContactForm extends Component {
             <Grid item xs={12} sm={6}>
               <TextField
                 name="email"
+                id="email"
                 fullWidth
                 variant="filled"
                 label="Email"
@@ -47,6 +49,7 @@ export default class ContactForm extends Component {
             <Grid item xs={12}>
               <TextField
                 name="message"
+                id="message"
                 fullWidth
                 variant="filled"
                 multiline
