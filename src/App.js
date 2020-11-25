@@ -2,6 +2,7 @@ import "./App.css";
 import { Container, Typography } from "@material-ui/core";
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import { FormspreeProvider } from '@formspree/react';
 
 import Bio from "./Application/Bio";
 import Projects from "./Application/Projects";
