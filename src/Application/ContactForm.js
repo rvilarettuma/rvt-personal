@@ -4,7 +4,6 @@ import Button from "@material-ui/core/Button";
 import Send from "@material-ui/icons/Send";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
-import axios from "axios";
 
 class ContactForm extends Component {
   constructor(props) {
