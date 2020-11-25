@@ -17,7 +17,7 @@ function Projects() {
       <Card>
         <CardContent>
         <Typography variant="h4">Tabularium</Typography>
-        <Typography variant="subtitle1">React</Typography>
+        <Typography variant="subtitle1" component="h5">React</Typography>
         <Typography variant="body1" component="p">A random generator based on themed tables for tabletop gamers,
             authors, and artists.</Typography>
         </CardContent>
