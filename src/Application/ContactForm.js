@@ -23,7 +23,7 @@ export default class ContactForm extends Component {
 
   render() {
     return (
-      <div>
+      <div className="section">
         <div className="subheader">
           <Typography variant="h3">Contact</Typography>
           <hr />

@@ -9,7 +9,7 @@ import Button from "@material-ui/core/Button";
 
 function Projects() {
   return (
-    <div className="pro">
+    <div className="section">
       <div className="subheader">
       <Typography variant="h3">Projects</Typography>
         <hr />

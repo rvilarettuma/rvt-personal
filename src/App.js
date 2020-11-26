@@ -96,6 +96,7 @@ function App() {
       <Container maxWidth="lg">
         <header className="App-header">
           <Typography component="h1" variant="h1">Richard Vilaret-Tuma</Typography>
+          <br/>
           <Typography component="h2" variant="h2">SysAdmin, Developer, DevOps</Typography>
         </header>
         <Bio />

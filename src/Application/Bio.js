@@ -1,14 +1,14 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 
-function Bio(props) {
+function Bio() {
   return (
-    <div>
+    <div className="section">
       <div className="subheader">
         <Typography variant="h3">Biography</Typography>
         <hr />
       </div>
-      <div className="bio">
+      <div className="bio-text">
         <Typography variant="body1" paragraph>
           The origin of my relationship with computers:
           <em>The Computer Room</em>. A vestige of the early 2000's; The
