@@ -1,6 +1,6 @@
 {
-  "short_name": "Rvtuma",
-  "name": "Richard Vilaret-Tuma",
+  "short_name": "rvtuma.com",
+  "name": "rvtuma.com",
   "description": "A personal site for Richard Vilaret-Tuma",
   "icons": [
     {
@@ -10,6 +10,7 @@
     }
   ],
   "start_url": ".",
+  "homepage": ".",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#FAF6F3"
