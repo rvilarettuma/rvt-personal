@@ -12,7 +12,7 @@ function Bio() {
         <Typography variant="body1" paragraph>
           The origin of my relationship with computers:
           <em>The Computer Room</em>. A vestige of the early 2000's; The
-          dedicated room for a beige Compaq and it's shrieking counterpart: the
+          dedicated room for a beige Compaq and its shrieking counterpart: the
           modem. The nightly ritual of tolerating dial-up screeching and
           launching up RuneScape was enough to enthrall me. It was also enough
           for my immigrant parents to brand me as the resident computer expert,
@@ -41,7 +41,7 @@ function Bio() {
           Administrator. Since I have completed my Bachelor of Science in
           Applied Computing Technology, I am currently looking for work across a
           variety of fields. System Administration, DevOps, and Web/Software
-          Development are all fields I've dabbled in, and would love to purse in
+          Development are all fields I've dabbled in, and would love to pursue in
           the future.
           </Typography>
       </div>
