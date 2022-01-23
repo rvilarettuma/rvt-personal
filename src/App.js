@@ -1,12 +1,11 @@
 import './App.css';
 import About from './Components/About/About';
+import Typography from '@mui/material/Typography'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Richard Vilaret-Tuma</h1>
-      </header>
+      <Typography variant="h1" component="h1">Richard Vilaret-Tuma</Typography>
       <About />
     </div>
   );
