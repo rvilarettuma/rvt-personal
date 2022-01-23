@@ -29,6 +29,22 @@ const theme = createTheme({
       fontFamily: 'Space Grotesk',
       fontWeight: 700,
     },
+    h3: {
+      fontFamily: 'Space Grotesk',
+      fontWeight: 700,
+    },
+    h4: {
+      fontFamily: 'Space Grotesk',
+      fontWeight: 700,
+    },
+    h5: {
+      fontFamily: 'Space Grotesk',
+      fontWeight: 700,
+    },
+    h6: {
+      fontFamily: 'Space Grotesk',
+      fontWeight: 700,
+    },
   },
 });
 

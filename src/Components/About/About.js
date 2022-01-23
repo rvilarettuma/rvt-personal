@@ -5,9 +5,8 @@ import { Typography } from '@mui/material';
 function About() {
   return (
     <div>
-      <h2>About</h2>
-      <Typography variant="p"><strong>{text.greeting}</strong></Typography>
-      <br/>
+      <Typography component="h2" variant="h4">About</Typography>
+      <Typography variant="p">{text.greeting}</Typography>
       <br/>
       <Typography variant="p">{text.about}</Typography>
     </div>
