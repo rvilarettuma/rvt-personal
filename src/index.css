@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'space-grotesk-bold';
-  src: local('SpaceGrotesk-Bold') url(./fonts/SpaceGrotesk-Bold.otf) format('otf');
+  src: local('SpaceGrotesk-Bold') url(./Fonts/SpaceGrotesk-Bold.otf) format('otf');
 }
 
 @font-face {
   font-family: 'space-mono-regular';
-  src: local('SpaceMono-Regular') url(./fonts/SpaceMono-Regular.ttf) format('ttf');
+  src: local('SpaceMono-Regular') url(./Fonts/SpaceMono-Regular.ttf) format('ttf');
 }
