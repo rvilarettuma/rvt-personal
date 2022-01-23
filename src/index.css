@@ -1,9 +1,17 @@
-@font-face {
-  font-family: 'space-grotesk-bold';
-  src: local('SpaceGrotesk-Bold') url(./Fonts/SpaceGrotesk-Bold.otf) format('otf');
+html {
+  background-color: #FAF6F3;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: 'space-mono-regular';
-  src: local('SpaceMono-Regular') url(./Fonts/SpaceMono-Regular.ttf) format('ttf');
+  font-family: 'SpaceMono-Regular';
+  src: local('SpaceMono-Regular') url(./Fonts/SpaceMono-Regular.ttf) format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SpaceGrotesk-Bold';
+  src: local('SpaceGrotesk-Bold') url(./Fonts/SpaceGrotesk-Bold.otf) format('opentype');
+  font-display: swap;
 }
