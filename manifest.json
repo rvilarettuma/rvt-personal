@@ -1,7 +1,6 @@
 {
-  "short_name": "rvtuma.com",
-  "name": "Richard Vilaret-Tuma Personal Site",
-  "description": "A personal site for Richard Vilaret-Tuma",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,8 +19,7 @@
     }
   ],
   "start_url": ".",
-  "homepage": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#FAF6F3"
+  "background_color": "#ffffff"
 }
