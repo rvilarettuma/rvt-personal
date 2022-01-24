@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Cultist-Bot",
+    "stack": "Discord.js, Node.js, Docker",
+    "description": "A Discord bot for \"Slay the Spire\" characters who are indecisive about which character to play next.",
+    "link": "",
+    "source": "https://github.com/rvilarettuma/cultist-bot"
+  },
+  {
+    "name": "Tabularium",
+    "stack": "ReactJS, GitHub Pages",
+    "description": "A progressive web application built in React. Designed using a mobile first approach. A random number generator is rolled against hand crafted tables to provide subject matter for artists, authors, and tabletop gamers.",
+    "link": "https://ttt.rvtuma.com/",
+    "source": "https://github.com/rvilarettuma/table-of-tables"
+  },
+  {
+    "name": "Home Lab",
+    "stack": "Bare-Metal, Docker",
+    "description": "A headless, bare-metal, multipurpose, high availability sandbox environment for serving and learning purposes. Operates on Ubuntu Server. All services run in Docker containers. Managed via SSH and Docker CLI. Docker Compose used to configure environmental variables and persistent volumes.",
+    "link": "",
+    "source": ""
+  },
+  {
+    "name": "rvtuma.com",
+    "stack": "ReactJS, GitHub Pages",
+    "description": "The website you are currently viewing! General components and themed use the MUI React UI Library.",
+    "link": "https://rvtuma.com",
+    "source": "https://github.com/rvilarettuma/rvt-personal"
+  }
+]
