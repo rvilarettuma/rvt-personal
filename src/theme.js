@@ -1,10 +1,10 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     type: 'light',
     primary: {
-      main: '#fca311',
+      main: '#fdca30',
     },
     secondary: {
       main: '#14213d',
@@ -24,10 +24,13 @@ const theme = createTheme({
     h1: {
       fontFamily: 'Space Grotesk',
       fontWeight: 900,
+      'background-color': '#fdca30',
+      'text-align': 'center',
+      margin: '1 rem',
     },
     h2: {
       fontFamily: 'Space Grotesk',
-      fontWeight: 700,
+      fontWeight: 700
     },
     h3: {
       fontFamily: 'Space Grotesk',
@@ -36,6 +39,10 @@ const theme = createTheme({
     h4: {
       fontFamily: 'Space Grotesk',
       fontWeight: 700,
+      'background-color': '#fdca30',
+      display: 'inline-block',
+      padding: '0.5rem 0.5rem',
+      'margin-bottom': '1rem'
     },
     h5: {
       fontFamily: 'Space Grotesk',
@@ -47,5 +54,7 @@ const theme = createTheme({
     },
   },
 });
+
+theme = responsiveFontSizes(theme);
 
 export default theme;

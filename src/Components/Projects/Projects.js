@@ -61,6 +61,7 @@ function Projects() {
       <Typography component="h2" variant="h4">
         Projects
       </Typography>
+      <br/>
       {getProjects()}
     </div>
   );

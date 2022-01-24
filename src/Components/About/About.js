@@ -1,14 +1,23 @@
-import React from 'react';
-import text from './Text.json'
-import { Typography } from '@mui/material';
+import React from "react";
+import text from "./Text.json";
+import { Typography } from "@mui/material";
 
 function About() {
   return (
     <div>
-      <Typography component="h2" variant="h4">About</Typography>
-      <Typography variant="p">{text.greeting}</Typography>
-      <br/>
-      <Typography variant="p">{text.about}</Typography>
+      <Typography component="h2" variant="h4">
+        About
+      </Typography>
+      <br />
+      <div className="section">
+        <Typography component="p" variant="p">
+          {text.greeting}
+        </Typography>
+        <br />
+        <Typography component="p" variant="p">
+          {text.about}
+        </Typography>
+      </div>
     </div>
   );
 }
