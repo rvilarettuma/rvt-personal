@@ -19,7 +19,7 @@ function getProjects() {
     var link = projectArray[project].link;
     var source = projectArray[project].source;
     result.push(
-      <Accordion>
+      <Accordion key={name}>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Stack>
             <Typography>

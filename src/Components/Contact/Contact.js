@@ -1,25 +1,19 @@
 import React from "react";
-import text from "./Text.json";
 import { Typography } from "@mui/material";
 
-function About() {
+function Contact() {
   return (
     <div className="section">
       <Typography component="h2" variant="h4">
-        About
+        Contact
       </Typography>
-      <br />
-      <div>
+      <div className="section">
         <Typography component="p" variant="p">
-          {text.greeting}
+          Feel free to contact me on LinkedIn!
         </Typography>
-        <br />
-        <Typography component="p" variant="p">
-          {text.about}
-        </Typography>
-      </div>
+        </div>
     </div>
   );
 }
 
-export default About;
+export default Contact;

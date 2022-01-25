@@ -13,6 +13,7 @@ function typewriter() {
               "SysAdmin",
               "Web Developer",
               "DevOps Engineer",
+              "IT Generalist"
             ],
             autoStart: true,
             loop: true,

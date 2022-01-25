@@ -6,6 +6,7 @@ import About from "./Components/About/About";
 import Projects from "./Components/Projects/Projects";
 import Footer from "./Components/Footer/Footer";
 import Typewriter from "./Components/Typewriter/Typewriter"
+import Contact from "./Components/Contact/Contact";
 import { useTheme, createTheme, ThemeProvider, responsiveFontSizes } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import IconButton from "@mui/material/IconButton";
@@ -52,6 +53,7 @@ function App() {
         <Typewriter />
         <About />
         <Projects />
+        <Contact />
         <Footer />
       </Container>
     </div>
@@ -75,7 +77,7 @@ export default function ToggleColorMode() {
         palette: {
           mode,
           primary: {
-            main: '#fdca30',
+            main: '#558b2f',
           }
         },
         typography: {
@@ -84,7 +86,7 @@ export default function ToggleColorMode() {
             fontFamily: 'Space Grotesk',
             fontWeight: 900,
             textAlign: 'center',
-            margin: '0.5 rem',
+            marginTop: '0.5 rem',
           },
           h2: {
             fontFamily: 'Space Grotesk',
@@ -98,7 +100,6 @@ export default function ToggleColorMode() {
             fontFamily: 'Space Grotesk',
             fontWeight: 700,
             display: 'inline-block',
-            padding: '0.5rem 0.5rem',
             marginBottom: '1rem'
           },
           h5: {

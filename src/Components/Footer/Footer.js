@@ -37,9 +37,7 @@ function Footer() {
           </Link>
         </Grid>
         <Grid item xs={12}>
-          <Typography
-            sx={iconStyle}
-            >
+          <Typography sx={iconStyle}>
             &#169; {year} Richard Vilaret-Tuma
           </Typography>
         </Grid>
