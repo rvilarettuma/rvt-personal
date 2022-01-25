@@ -1,5 +1,5 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import About from "./Components/About/About";
@@ -15,6 +15,8 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
+let storage = window.localStorage;
+
 
 function App() {
   let theme = useTheme();
@@ -60,8 +62,25 @@ function App() {
   );
 }
 
+function getColorMode() {
+  let colorMode = storage.getItem('colorMode');
+  console.log(colorMode)
+  if (!colorMode || colorMode === "light") {
+    colorMode = "light";
+  } else {
+    colorMode = "dark"; 
+  }
+
+  return colorMode;
+}
+
 export default function ToggleColorMode() {
-  const [mode, setMode] = React.useState("light");
+  let [mode, setMode] = React.useState(() => getColorMode());
+
+  useEffect(() => {
+    storage.setItem('colorMode', mode);
+  });
+
   const colorMode = React.useMemo(
     () => ({
       toggleColorMode: () => {
