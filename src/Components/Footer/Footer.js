@@ -8,15 +8,13 @@ import Link from '@mui/material/Link';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const dividerStyle = {
-  bgcolor: 'background.paper',
-  'margin-top': '5rem',
-  'margin-bottom': '1rem',
+  marginTop: '5rem',
+  marginBottom: '1rem',
   textAlign: 'center'
 };
 
 const iconStyle = {
   textAlign: 'center',
-  color: 'text.secondary'
 }
 const d = new Date();
 let year = d.getFullYear();

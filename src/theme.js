@@ -2,7 +2,7 @@ import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 let theme = createTheme({
   palette: {
-    type: 'light',
+    mode: 'light',
     primary: {
       main: '#fdca30',
     },
@@ -26,7 +26,7 @@ let theme = createTheme({
       fontWeight: 900,
       'background-color': '#fdca30',
       'text-align': 'center',
-      margin: '1 rem',
+      margin: '0.5 rem',
     },
     h2: {
       fontFamily: 'Space Grotesk',
