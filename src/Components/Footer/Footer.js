@@ -18,6 +18,8 @@ const iconStyle = {
   textAlign: 'center',
   color: 'text.secondary'
 }
+const d = new Date();
+let year = d.getFullYear();
 
 function Footer() {
   return (
@@ -40,7 +42,7 @@ function Footer() {
           <Typography
             sx={iconStyle}
             >
-            &#169; 2022 Richard Vilaret-Tuma
+            &#169; {year} Richard Vilaret-Tuma
           </Typography>
         </Grid>
       </Grid>
