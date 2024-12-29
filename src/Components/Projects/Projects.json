@@ -16,15 +16,15 @@
   {
     "name": "Home Lab",
     "stack": "Bare-Metal, Docker",
-    "description": "A headless, bare-metal, multipurpose, high availability sandbox environment for serving and learning purposes. Operates on Ubuntu Server. All services run in Docker containers. Managed via SSH and Docker CLI. Docker Compose used to configure environmental variables and persistent volumes.",
+    "description": "A sandbox environment for development, experimentation, and hosting services like Discord bots and Minecraft servers.",
     "link": "",
     "source": ""
   },
   {
-    "name": "rvtuma.com",
-    "stack": "ReactJS, GitHub Pages",
+    "name": "Personal Site",
+    "stack": "ReactJS, Create React App, GitHub Pages",
     "description": "The website you are currently viewing! General components and themed use the MUI React UI Library.",
-    "link": "https://rvtuma.com",
+    "link": "https://rvt.sh",
     "source": "https://github.com/rvilarettuma/rvt-personal"
   }
 ]
