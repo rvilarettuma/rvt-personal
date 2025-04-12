@@ -23,14 +23,62 @@
         ]
     },
     {
-        "title": "Foobar",
-        "company": "Foobar Inc",
-        "dates": "Apr 1997 - Aug 2024",
+        "title": "Senior Information Technology Specialist",
+        "company": "SciTec, Inc.",
+        "dates": "Jun 2022 - Aug 2024",
         "bullets": [
-            "Foobar was here"
+            "Defined specifications for standard-issue and specialized workstations and laptops, liaising with vendors for quotes and procurement.",
+            "Led hiring and training of help desk employees. Defined roles, wrote job requisitions, screened, interviewed, and onboarded candidates.",
+            "Deployed and maintained infrastructure including servers, SANs, NASs, switches, and firewalls. Servers were deployed both on-prem and in the cloud (AWS EC2/RDS), Windows and Linux.",
+            "Wrote extensive documentation to provide user-facing tutorials, team specific processes, common fixes, and deployment and maintenance notes.",
+            "Automated deployment of Linux workstations via Red Hat Kickstart and Ansible, as well as automating smaller tasks via PowerShell and Bash.",
+            "Improved existing processes and implemented new processes on a corporate scale.",
+            "Collaboratively worked with security and information assurance personnel in order to establish workflows for granting access to classified spaces and onboarding users, as well as the receipt and sending of media.",
+            "Planned projects in which responsibility was delegated to junior staff members."
         ],
         "skills": [
-            "Testing"
+            "Information Technology Infrastructure",
+            "Active DoD Secret Clearance",
+            "Red Hat Enterprise Linux",
+            "Ansible",
+            "RedHat Kickstart",
+            "Git Version Control",
+            "GitLab",
+            "VMware VSphere",
+            "Remote Device Management",
+            "Linux",
+            "Jira",
+            "Confluence",
+            "Office365",
+            "AWS EC2 / RDS",
+            "Bash"
+        ]
+    },
+    {
+        "title": "Third Level Support Engineer",
+        "company": "HP, Inc.",
+        "dates": "Jun 2022 - Aug 2024",
+        "bullets": [
+            "Provide global support for the HP Z series of professional workstation desktops and laptops, and virtual reality systems.",
+            "Receive customer escalations from first and second level support using in-house ticketing system.",
+            "Replicate problems in a lab environment to define the root cause of customer escalations.", 
+            "Schedule and attend calls or meetings with customers, tier 1 and 2 support personnel, and third-party vendors to determine appropriate methods of approach and establish timelines.",
+            "Cooperatively create a permanent and timely fix for customers by coordinating with relevant research and development teams.",
+            "Compose scripts to automate and expedite testing of customer issues and possible resolutions. ",
+            "Write tutorial documentation for customers and all tiers of support.",
+            "Audit and review pre-production Z Series systems before official release."
+        ],
+        "skills": [
+            "Virtual Reality (VR)",
+            "Microsoft Outlook",
+            "Customer Support",
+            "Linux",
+            "Software Troubleshooting",
+            "Bash",
+            "Computer Hardware Troubleshooting",
+            "Communication",
+            "Red Hat Enterprise Linux",
+            "Ubuntu"
         ]
     }
 ]
