@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Associate Principal Systems Administrator",
+        "company": "Parsons Corporation",
+        "dates": "Aug 2024 - Present",
+        "bullets": [
+            "Install, configure, and maintain Red Hat Linux and VMware ESXi 8 environments, identifying and remediating vulnerabilities.",
+            "Automate system administration tasks using Ansible and Bash scripting to improve efficiency and security.",
+            "Deploy, manage, and troubleshoot multi-petabyte NFS storage solutions using Qumulo and Red Hat high availability clusters.",
+            "Manage virtual machine environments using VMware vSphere, including provisioning, modification, and administration.",
+            "Administer system security, including user account creation, access control, and compliance with DISA STIG standards.",
+            "Deploy and maintain HPE Gen 10 and 11 server hardware, workstation desktops, and thin client devices.",
+            "Maintain and optimize multi-user computer systems, coordinating with network engineers to ensure seamless operation.",
+            "Configure RAID storage for Scality RING pre-deployment, ensuring data integrity and performance.",
+            "Mentor and assist junior staff with troubleshooting and professional development."
+        ],
+        "skills": [
+            "Red Hat Enterprise Linux",
+            "VMware/ESXI",
+            "DISA STIG",
+            "Ansible",
+            "Qumulo"
+        ]
+    },
+    {
+        "title": "Foobar",
+        "company": "Foobar Inc",
+        "dates": "Apr 1997 - Aug 2024",
+        "bullets": [
+            "Foobar was here"
+        ],
+        "skills": [
+            "Testing"
+        ]
+    }
+]
