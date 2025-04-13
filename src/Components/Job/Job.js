@@ -1,5 +1,5 @@
 import React from "react";
-import SkillsModal from "../Resume/SkillsModal";
+import SkillsModal from "../Skills/SkillsModal";
 import Typography from "@mui/material/Typography";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';

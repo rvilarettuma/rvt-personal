@@ -1,6 +1,6 @@
 import React from "react";
 import jobs from "./Text.json";
-import SkillsModal from "./SkillsModal";
+import SkillsModal from "../Skills/SkillsModal";
 import { Typography } from "@mui/material";
 import Job from "../Job/Job";
 import Box from '@mui/material/Box';
