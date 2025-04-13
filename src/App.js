@@ -3,8 +3,6 @@ import React, { useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import About from "./Components/About/About";
-import jobs from "./Components/Resume/Text.json";
-import Job from "./Components/Job/Job";
 import LatestJob from "./Components/LatestJob/LatestJob";
 import Resume from "./Components/Resume/Resume";
 import Projects from "./Components/Projects/Projects";
@@ -57,8 +55,8 @@ function App() {
         </Typography>
         <Typewriter />
         <About />
-        {/* <LatestJob /> */}
-        <Resume />
+        <LatestJob />
+        {/* <Resume /> */}
         <Projects />
         <Contact />
         <Footer />

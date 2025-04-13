@@ -16,14 +16,6 @@ function buildJob(props) {
     const company = props.job.company;
     const dates = props.job.dates;
     const skills = props.job.skills;
-    var skillsComponents = [];
-    skillsComponents.push(
-        Array.from(skills).map((_, index) => (
-            <Typography key={`${company}-skills-${index}`}>
-                {skills[index]}
-            </Typography>
-        ))
-    )
     const skillsSize = Object.keys(skills).length;
     let skillsTitle = "";
     switch (skillsSize) {
@@ -67,7 +59,7 @@ function buildJob(props) {
                 </List>
             </CardContent>
             <CardActions>
-                <SkillsModal title={skillsTitle} skills={skillsComponents} />
+                <SkillsModal title={skillsTitle} skills={skills} />
             </CardActions>
         </Card>
     )
