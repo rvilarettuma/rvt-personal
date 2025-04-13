@@ -21,18 +21,6 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 let storage = window.localStorage;
 
-function getJobs() {
-  var jobsArray = jobs;
-  var result = [];
-  for (const job in jobsArray) {
-    result.push(
-      <Job job={jobsArray[job]}/>
-    )
-}
-
-return result;
-}
-
 function App() {
   let theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
@@ -69,9 +57,8 @@ function App() {
         </Typography>
         <Typewriter />
         <About />
-        {/* {getJobs()} */}
-        <LatestJob />
-        {/* <Resume /> */}
+        {/* <LatestJob /> */}
+        <Resume />
         <Projects />
         <Contact />
         <Footer />
