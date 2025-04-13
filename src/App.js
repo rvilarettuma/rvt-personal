@@ -3,6 +3,8 @@ import React, { useEffect } from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import About from "./Components/About/About";
+import jobs from "./Components/Resume/Text.json";
+import Job from "./Components/Job/Job";
 import LatestJob from "./Components/LatestJob/LatestJob";
 import Resume from "./Components/Resume/Resume";
 import Projects from "./Components/Projects/Projects";
@@ -19,6 +21,17 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 const ColorModeContext = React.createContext({ toggleColorMode: () => {} });
 let storage = window.localStorage;
 
+function getJobs() {
+  var jobsArray = jobs;
+  var result = [];
+  for (const job in jobsArray) {
+    result.push(
+      <Job job={jobsArray[job]}/>
+    )
+}
+
+return result;
+}
 
 function App() {
   let theme = useTheme();
@@ -56,6 +69,7 @@ function App() {
         </Typography>
         <Typewriter />
         <About />
+        {/* {getJobs()} */}
         <LatestJob />
         {/* <Resume /> */}
         <Projects />
