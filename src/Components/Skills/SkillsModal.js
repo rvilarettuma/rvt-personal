@@ -36,7 +36,7 @@ export default function SkillsModal(props) {
     return (
         <div>
             <Typography component="h5" variant="h5">Skills</Typography>
-            <Button variant="text" startIcon={<DiamondOutlinedIcon />} onClick={handleOpen}>
+            <Button variant="outlined" startIcon={<DiamondOutlinedIcon />} onClick={handleOpen}>
                 <Typography>{props.title}</Typography>
             </Button>
             <Dialog
