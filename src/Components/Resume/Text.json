@@ -80,5 +80,46 @@
             "Red Hat Enterprise Linux",
             "Ubuntu"
         ]
+    },
+    {
+        "title": "Student IT Administrator",
+        "company": "Colorado State University",
+        "dates": "FEb 2017 - Jun 2021",
+        "bullets": [
+            "Service and troubleshoot computer and network systems for about 4300 administrative staff.",
+            "Configure and deploy desktop, laptop, and mobile devices using SmartDeploy imaging software.",
+            "Administer Office 365 Software as a Service (SaaS) and manage Exchange mail service.",
+            "Configure and troubleshoot audio/video conferencing hardware and software like Microsoft Teams, Zoom, and GoToMeeting.",
+            "Manage checkout laptops and surplus inventory."
+        ],
+        "skills": [
+            "Microsoft Outlook",
+            "Customer Support",
+            "Office 365",
+            "Communication"
+        ]
+    },
+    {
+        "title": "Desktop Support Technician",
+        "company": "John A. Ferguson Senior High School",
+        "dates": "Aug 2013 - May 2015",
+        "bullets": [
+            " Worked cooperatively with the lead IT administrator, a small student group, and Miami-Dade county employees to diagnose and troubleshoot technical issues amongst the school’s professors and faculty, modernize computer/network systems, manage inventory, and facilitate the distribution of online state exams for over 4,000 students."
+        ],
+        "skills": [
+            "Communication"
+        ]
+    },
+    {
+        "title": "Software Engineer (Mentee)",
+        "company": "Miami-Dade County",
+        "dates": "Aug 2013 - May 2015",
+        "bullets": [
+            "Participated in an exclusive, two year mentorship program underneath two professional software developers in order to understand typical procedures and responsibilities within an office environment that provides technical support and critical applications for a state county of 2.4 million people.",
+            "Responsibilities included meeting attendance and participation, note taking on standard systems, touring the facility, and small programming assignments. Formally recognized by County Commissioner Juan C. Zapata and County Mayor Carlos A. Gimenez."
+        ],
+        "skills": [
+            "Communication"
+        ]
     }
 ]
