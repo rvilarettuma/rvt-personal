@@ -1,0 +1,125 @@
+[
+    {
+        "title": "Associate Principal Systems Administrator",
+        "company": "Parsons Corporation",
+        "dates": "Aug 2024 - Present",
+        "bullets": [
+            "Install, configure, and maintain Red Hat Linux and VMware ESXi 8 environments, identifying and remediating vulnerabilities.",
+            "Automate system administration tasks using Ansible and Bash scripting to improve efficiency and security.",
+            "Deploy, manage, and troubleshoot multi-petabyte NFS storage solutions using Qumulo and Red Hat high availability clusters.",
+            "Manage virtual machine environments using VMware vSphere, including provisioning, modification, and administration.",
+            "Administer system security, including user account creation, access control, and compliance with DISA STIG standards.",
+            "Deploy and maintain HPE Gen 10 and 11 server hardware, workstation desktops, and thin client devices.",
+            "Maintain and optimize multi-user computer systems, coordinating with network engineers to ensure seamless operation.",
+            "Configure RAID storage for Scality RING pre-deployment, ensuring data integrity and performance.",
+            "Mentor and assist junior staff with troubleshooting and professional development."
+        ],
+        "skills": [
+            "Red Hat Enterprise Linux",
+            "VMware/ESXI",
+            "DISA STIG",
+            "Ansible",
+            "Qumulo"
+        ]
+    },
+    {
+        "title": "Senior Information Technology Specialist",
+        "company": "SciTec, Inc.",
+        "dates": "Jun 2022 - Aug 2024",
+        "bullets": [
+            "Defined specifications for standard-issue and specialized workstations and laptops, liaising with vendors for quotes and procurement.",
+            "Led hiring and training of help desk employees. Defined roles, wrote job requisitions, screened, interviewed, and onboarded candidates.",
+            "Deployed and maintained infrastructure including servers, SANs, NASs, switches, and firewalls. Servers were deployed both on-prem and in the cloud (AWS EC2/RDS), Windows and Linux.",
+            "Wrote extensive documentation to provide user-facing tutorials, team specific processes, common fixes, and deployment and maintenance notes.",
+            "Automated deployment of Linux workstations via Red Hat Kickstart and Ansible, as well as automating smaller tasks via PowerShell and Bash.",
+            "Improved existing processes and implemented new processes on a corporate scale.",
+            "Collaboratively worked with security and information assurance personnel in order to establish workflows for granting access to classified spaces and onboarding users, as well as the receipt and sending of media.",
+            "Planned projects in which responsibility was delegated to junior staff members."
+        ],
+        "skills": [
+            "Information Technology Infrastructure",
+            "Active DoD Secret Clearance",
+            "Red Hat Enterprise Linux",
+            "Ansible",
+            "RedHat Kickstart",
+            "Git Version Control",
+            "GitLab",
+            "VMware VSphere",
+            "Remote Device Management",
+            "Linux",
+            "Jira",
+            "Confluence",
+            "Office365",
+            "AWS EC2 / RDS",
+            "Bash"
+        ]
+    },
+    {
+        "title": "Third Level Support Engineer",
+        "company": "HP, Inc.",
+        "dates": "Jun 2022 - Aug 2024",
+        "bullets": [
+            "Provide global support for the HP Z series of professional workstation desktops and laptops, and virtual reality systems.",
+            "Receive customer escalations from first and second level support using in-house ticketing system.",
+            "Replicate problems in a lab environment to define the root cause of customer escalations.", 
+            "Schedule and attend calls or meetings with customers, tier 1 and 2 support personnel, and third-party vendors to determine appropriate methods of approach and establish timelines.",
+            "Cooperatively create a permanent and timely fix for customers by coordinating with relevant research and development teams.",
+            "Compose scripts to automate and expedite testing of customer issues and possible resolutions. ",
+            "Write tutorial documentation for customers and all tiers of support.",
+            "Audit and review pre-production Z Series systems before official release."
+        ],
+        "skills": [
+            "Virtual Reality (VR)",
+            "Microsoft Outlook",
+            "Customer Support",
+            "Linux",
+            "Software Troubleshooting",
+            "Bash",
+            "Computer Hardware Troubleshooting",
+            "Communication",
+            "Red Hat Enterprise Linux",
+            "Ubuntu"
+        ]
+    },
+    {
+        "title": "Student IT Administrator",
+        "company": "Colorado State University",
+        "dates": "FEb 2017 - Jun 2021",
+        "bullets": [
+            "Service and troubleshoot computer and network systems for about 4300 administrative staff.",
+            "Configure and deploy desktop, laptop, and mobile devices using SmartDeploy imaging software.",
+            "Administer Office 365 Software as a Service (SaaS) and manage Exchange mail service.",
+            "Configure and troubleshoot audio/video conferencing hardware and software like Microsoft Teams, Zoom, and GoToMeeting.",
+            "Manage checkout laptops and surplus inventory."
+        ],
+        "skills": [
+            "Microsoft Outlook",
+            "Customer Support",
+            "Office 365",
+            "Communication"
+        ]
+    },
+    {
+        "title": "Desktop Support Technician",
+        "company": "John A. Ferguson Senior High School",
+        "dates": "Aug 2013 - May 2015",
+        "bullets": [
+            " Worked cooperatively with the lead IT administrator, a small student group, and Miami-Dade county employees to diagnose and troubleshoot technical issues amongst the school’s professors and faculty, modernize computer/network systems, manage inventory, and facilitate the distribution of online state exams for over 4,000 students."
+        ],
+        "skills": [
+            "Communication"
+        ]
+    },
+    {
+        "title": "Software Engineer (Mentee)",
+        "company": "Miami-Dade County",
+        "dates": "Aug 2013 - May 2015",
+        "bullets": [
+            "Participated in an exclusive, two year mentorship program underneath two professional software developers in order to understand typical procedures and responsibilities within an office environment that provides technical support and critical applications for a state county of 2.4 million people.",
+            "Responsibilities included meeting attendance and participation, note taking on standard systems, touring the facility, and small programming assignments. Formally recognized by County Commissioner Juan C. Zapata and County Mayor Carlos A. Gimenez."
+        ],
+        "skills": [
+            "Communication"
+        ]
+    }
+]
