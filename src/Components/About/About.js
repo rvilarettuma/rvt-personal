@@ -1,22 +1,19 @@
 import React from "react";
 import text from "./Text.json";
 import FancyHeader from "../FancyHeader/FancyHeader";
-import { CardHeader, Typography } from "@mui/material";
-import Card from '@mui/material/Card';
-import CardContent from "@mui/material/CardContent";
+import { Typography, Box } from "@mui/material";
 
 function About() {
   return (
     <div>
       <FancyHeader text="About" />
-      <Card sx={{ marginBottom: "1rem" }}>
-        <CardHeader title={text.greeting}></CardHeader>
-        <CardContent>
+      <Box sx={{ marginBottom: "1rem", padding: "1rem"}}>
+        <Typography component="h4" variant="h5">{text.greeting}</Typography>
+        {/* <CardHeader title={text.greeting}></CardHeader> */}
           <Typography component="p" variant="p">
             {text.about}
           </Typography>
-        </CardContent>
-      </Card>
+      </Box>
     </div>
   );
 }
