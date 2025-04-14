@@ -8,6 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CodeIcon from "@mui/icons-material/Code";
 import LinkIcon from "@mui/icons-material/Link";
 import projects from "./Projects.json";
+import FancyHeader from "../FancyHeader/FancyHeader";
 
 function getProjects() {
   var projectArray = projects;
@@ -57,12 +58,9 @@ function getProjects() {
 }
 
 function Projects() {
-  const theme = useTheme();
   return (
     <div>
-      <Typography component="h3" variant="h4" sx={{ backgroundColor: `${theme.palette.accent.main}`, boxShadow: `4px 4px ${theme.palette.text.primary}`, padding: "0.5rem" }}>
-        Projects
-      </Typography>
+      <FancyHeader text="Projects"/>
       <br />
       {getProjects()}
     </div>

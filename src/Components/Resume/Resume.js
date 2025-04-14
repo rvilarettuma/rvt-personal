@@ -1,8 +1,7 @@
 import React from "react";
 import jobs from "./Text.json";
-import { Typography } from "@mui/material";
-import { useTheme } from '@mui/material/styles';
 import Job from "../Job/Job";
+import FancyHeader from "../FancyHeader/FancyHeader";
 
 function getJobs() {
     var jobsArray = jobs;
@@ -16,12 +15,9 @@ function getJobs() {
 }
 
 function Resume() {
-    const theme = useTheme();
     return (
         <div className="resume-section">
-            <Typography component="h3" variant="h4" sx={{ backgroundColor: `${theme.palette.accent.main}`, boxShadow: `4px 4px ${theme.palette.text.primary}`, padding: "0.5rem"}}>
-                Resume
-            </Typography>
+                  <FancyHeader text="Resume"/>
             {getJobs()}
         </div>
     );
