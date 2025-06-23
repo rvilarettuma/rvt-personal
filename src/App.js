@@ -19,7 +19,7 @@ function App() {
         <ThemeContextProvider>
             <div className="App">
                 <Container>
-                    <ThemeButton />
+                <ThemeButton />
                     <Typography component="h1" variant="h1">
                         Richard Vilaret-Tuma
                     </Typography>
