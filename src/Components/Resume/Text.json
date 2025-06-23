@@ -1,8 +1,30 @@
 [
     {
+        "title": "Technical Support Engineer",
+        "company": "Red Hat",
+        "dates": "Jun 2025 - Present",
+        "bullets": [
+            "Support customers by responding within the designated service-level agreement (SLA) period to incoming calls and web-based inquiries about our technologies",
+            "Investigate and troubleshoot issues, developing solutions for our customers while understanding their business needs",
+            "Resolve customer issues with all identity management products especially in the areas of interoperability with base operating system technologies such as PAM and SSH, directory services, IPA,SSSD and Kerberos",
+            "Advanced troubleshooting and debugging skills; passion for problem-solving and investigation",
+            "Exceed customer expectations by providing outstanding customer service",
+            "Collaborate with other engineers and developers to develop creative solutions for our customers, including fixes for our offerings",
+            "Share your knowledge gained from troubleshooting issues by contributing to the global Red Hat knowledge management system; present troubleshooting instructions and solutions to other engineers within the domain",
+            "Manage customer cases and maintain clear and concise case documentation"
+        ],
+        "skills": [
+            "Red Hat Enterprise Linux",
+            "Customer Support",
+            "Identity Management",
+            "Active Directory",
+            "Kerberos"
+        ]
+    },
+    {
         "title": "Associate Principal Systems Administrator",
         "company": "Parsons Corporation",
-        "dates": "Aug 2024 - Present",
+        "dates": "Aug 2024 - Apr 2025",
         "bullets": [
             "Install, configure, and maintain Red Hat Linux and VMware ESXi 8 environments, identifying and remediating vulnerabilities.",
             "Automate system administration tasks using Ansible and Bash scripting to improve efficiency and security.",
