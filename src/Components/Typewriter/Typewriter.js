@@ -1,11 +1,14 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Typewriter from "typewriter-effect";
+import { useTheme } from '@mui/material/styles';
 
-function typewriter() {
+function TypewriterCustom() {
+  const theme = useTheme();
+
   return (
     <div className="typewriter">
-      <Typography component="h2" variant="h3">
+      <Typography component="h2" variant="h2" sx={{ background: `linear-gradient(120deg,${theme.palette.primary.main},${theme.palette.secondary.main})`, backgroundClip: "text", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
         <Typewriter
           options={{
             strings: [
@@ -24,4 +27,4 @@ function typewriter() {
   );
 }
 
-export default typewriter;
+export default TypewriterCustom;

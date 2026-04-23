@@ -1,7 +1,7 @@
 import React from "react";
 import jobs from "./Text.json";
-import { Typography } from "@mui/material";
 import Job from "../Job/Job";
+import FancyHeader from "../FancyHeader/FancyHeader";
 
 function getJobs() {
     var jobsArray = jobs;
@@ -17,9 +17,7 @@ function getJobs() {
 function Resume() {
     return (
         <div className="resume-section">
-            <Typography component="h2" variant="h4">
-                Resume
-            </Typography>
+                  <FancyHeader text="Resume"/>
             {getJobs()}
         </div>
     );
