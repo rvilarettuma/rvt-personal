@@ -10,7 +10,7 @@
     "name": "Tabularium",
     "stack": "ReactJS, GitHub Pages",
     "description": "A progressive web application built in React. Designed using a mobile first approach. A random number generator is rolled against hand crafted tables to provide subject matter for artists, authors, and tabletop gamers.",
-    "link": "https://ttt.rvtuma.com/",
+    "link": "https://ttt.rvt.sh/",
     "source": "https://github.com/rvilarettuma/table-of-tables"
   },
   {
