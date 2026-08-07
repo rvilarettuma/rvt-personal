@@ -16,6 +16,9 @@ const lightThemeOptions = {
             default: '#f8f9f6',
             paper: '#f8f9f6',
         },
+        accent: {
+            main: '#8fb79a',
+        },
     },
     typography
 }

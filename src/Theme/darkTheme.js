@@ -16,6 +16,9 @@ const darkThemeOptions = {
             default: '#080906',
             paper: '#080906',
         },
+        accent: {
+            main: '#487053',
+        },
     },
     typography
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import { useTheme } from '@mui/material/styles';
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
@@ -7,6 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CodeIcon from "@mui/icons-material/Code";
 import LinkIcon from "@mui/icons-material/Link";
 import projects from "./Projects.json";
+import FancyHeader from "../FancyHeader/FancyHeader";
 
 function getProjects() {
   var projectArray = projects;
@@ -30,7 +32,7 @@ function getProjects() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>{description}</Typography>
-          <br/>
+          <br />
           <Stack direction="row" spacing={2}>
             {link ? (
               <Button variant="contained" href={link} startIcon={<LinkIcon />}>
@@ -58,10 +60,8 @@ function getProjects() {
 function Projects() {
   return (
     <div>
-      <Typography component="h2" variant="h4">
-        Projects
-      </Typography>
-      <br/>
+      <FancyHeader text="Projects"/>
+      <br />
       {getProjects()}
     </div>
   );

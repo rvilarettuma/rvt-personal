@@ -1,12 +1,11 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import FancyHeader from "../FancyHeader/FancyHeader";
 
 function Contact() {
   return (
     <div className="section">
-      <Typography component="h2" variant="h4">
-        Contact
-      </Typography>
+            <FancyHeader text="Contact"/>
       <div className="section">
         <Typography component="p" variant="p">
           Feel free to contact me on LinkedIn!

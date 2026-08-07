@@ -8,6 +8,7 @@ import DiamondOutlinedIcon from '@mui/icons-material/DiamondOutlined';
 import Stack from '@mui/material/Stack';
 import CloseIcon from '@mui/icons-material/Close';
 import { IconButton } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 
 const style = {
     position: 'absolute',
@@ -28,7 +29,7 @@ function skillsComponents(props) {
 }
 
 export default function SkillsModal(props) {
-
+    const theme = useTheme();
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -36,7 +37,7 @@ export default function SkillsModal(props) {
     return (
         <div>
             <Typography component="h5" variant="h5">Skills</Typography>
-            <Button variant="outlined" startIcon={<DiamondOutlinedIcon />} onClick={handleOpen}>
+            <Button startIcon={<DiamondOutlinedIcon />} onClick={handleOpen}>
                 <Typography>{props.title}</Typography>
             </Button>
             <Dialog
@@ -45,7 +46,7 @@ export default function SkillsModal(props) {
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
-                <DialogTitle>Skills</DialogTitle>
+                <DialogTitle sx={{ backgroundColor: `${theme.palette.accent.main}`}} >Skills</DialogTitle>
                 <IconButton aria-label="close" onClick={handleClose} sx={style}>
                     <CloseIcon />
                 </IconButton>

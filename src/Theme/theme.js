@@ -1,11 +1,11 @@
-// theme/index.js
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import lightThemeOptions from './lightTheme'
 import darkThemeOptions from './darkTheme'
-import typography from './typography';
 
-const lightTheme = createTheme(lightThemeOptions);
-const darkTheme = createTheme(darkThemeOptions);
+let lightTheme = createTheme(lightThemeOptions);
+lightTheme = responsiveFontSizes(lightTheme)
+let darkTheme = createTheme(darkThemeOptions);
+darkTheme = responsiveFontSizes(darkTheme)
 
 const themeConfig = {
   light: lightTheme,
@@ -13,115 +13,3 @@ const themeConfig = {
 };
 
 export default themeConfig;
-// import { createTheme, responsiveFontSizes } from "@mui/material/styles";
-
-// let theme = createTheme({
-//   palette: {
-//     mode: 'light',
-//     primary: {
-//       main: '#fdca30',
-//     },
-//     secondary: {
-//       main: '#14213d',
-//     },
-//     error: {
-//       main: '#d50000',
-//     },
-//     info: {
-//       main: '#6595a0',
-//     },
-//     warning: {
-//       main: '#e65100',
-//     },
-//   },
-//   typography: {
-//     fontFamily: 'Space Mono',
-//     h1: {
-//       fontFamily: 'Space Grotesk',
-//       fontWeight: 900,
-//       'background-color': '#fdca30',
-//       'text-align': 'center',
-//       margin: '0.5 rem',
-//     },
-//     h2: {
-//       fontFamily: 'Space Grotesk',
-//       fontWeight: 700
-//     },
-//     h3: {
-//       fontFamily: 'Space Grotesk',
-//       fontWeight: 700,
-//     },
-//     h4: {
-//       fontFamily: 'Space Grotesk',
-//       fontWeight: 700,
-//       'background-color': '#fdca30',
-//       display: 'inline-block',
-//       padding: '0.5rem 0.5rem',
-//       'margin-bottom': '1rem'
-//     },
-//     h5: {
-//       fontFamily: 'Space Grotesk',
-//       fontWeight: 700,
-//     },
-//     h6: {
-//       fontFamily: 'Space Grotesk',
-//       fontWeight: 700,
-//     },
-//   },
-// });
-
-// theme = responsiveFontSizes(theme);
-
-// export default theme;
-
-
-///////////
-
- // let theme = React.useMemo(
-  //   () =>
-  //     createTheme({
-  //       palette: {
-  //         mode,
-  //         primary: {
-  //           main: '#8d9c63',
-  //         },
-  //         secondary: {
-  //           main: '#aac7a9'
-  //         }
-  //       },
-  //       typography: {
-  //         fontFamily: 'Space Mono',
-  //         h1: {
-  //           fontFamily: 'Space Grotesk',
-  //           fontWeight: 900,
-  //           textAlign: 'center',
-  //           marginTop: '0.5 rem',
-  //         },
-  //         h2: {
-  //           fontFamily: 'Space Grotesk',
-  //           fontWeight: 700
-  //         },
-  //         h3: {
-  //           fontFamily: 'Space Grotesk',
-  //           fontWeight: 700,
-  //         },
-  //         h4: {
-  //           fontFamily: 'Space Grotesk',
-  //           fontWeight: 700,
-  //           display: 'inline-block',
-  //           marginBottom: '1rem'
-  //         },
-  //         h5: {
-  //           fontFamily: 'Space Grotesk',
-  //           fontWeight: 700,
-  //         },
-  //         h6: {
-  //           fontFamily: 'Space Grotesk',
-  //           fontWeight: 700,
-  //         },
-  //       },
-  //     }),
-  //   [mode]
-  // );
-
-  // theme = responsiveFontSizes(theme);
