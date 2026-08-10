@@ -15,15 +15,15 @@
   },
   {
     "name": "Home Lab",
-    "stack": "Bare-Metal, Docker",
-    "description": "A sandbox environment for development, experimentation, and hosting services like Discord bots and Minecraft servers.",
+    "stack": "Bare-Metal, Proxmox, Docker, Fedora Server",
+    "description": "A sandbox environment for development, experimentation, and hosting services like Discord bots, Minecraft servers, and home automation.",
     "link": "",
     "source": ""
   },
   {
     "name": "Personal Site",
-    "stack": "ReactJS, Create React App, GitHub Pages",
-    "description": "The website you are currently viewing! General components and themed use the MUI React UI Library.",
+    "stack": "JavaScript, Vite, GitHub Pages",
+    "description": "The website you are currently viewing! Built with Vite and ReactJS, this site is a single page application that is hosted on GitHub Pages.",
     "link": "https://rvt.sh",
     "source": "https://github.com/rvilarettuma/rvt-personal"
   }

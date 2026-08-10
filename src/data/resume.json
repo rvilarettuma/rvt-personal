@@ -1,8 +1,28 @@
 [
     {
+        "title": "Software Maintenance Engineer",
+        "company": "Red Hat, Inc.",
+        "dates": "Jun 2025 - Present",
+        "bullets": [
+            "Support customers by responding within the designated service-level agreement (SLA) period to incoming calls and web-based inquiries about our technologies.",
+            "Write technical, globally facing solutions articles by presenting troubleshooting information to customers and other engineers within the domain as contributions to the Red Hat knowledge management system.",
+            "Engage with generative AI tools like GeminiCLI and other internal tools for troubleshooting, language translation, and documentation writing.",
+            "Investigate and troubleshoot issues, developing solutions for our customers while understanding their business needs.",
+            "Resolve customer issues with all identity management products especially in the areas of interoperability with base operating system technologies such as PAM and SSH, directory services, IPA, SSSD and Kerberos.",
+            "Collaborate with other engineers and developers to develop creative solutions for our customers, including fixes for our offerings."
+        ],
+        "skills": [
+            "Red Hat Identity Management (IdM)",
+            "Red Hat Directory Server (RHDS)",
+            "Linux System Administration",
+            "Troubleshooting",
+            "Technical Documentation"
+        ]
+    },
+    {
         "title": "Associate Principal Systems Administrator",
         "company": "Parsons Corporation",
-        "dates": "Aug 2024 - Present",
+        "dates": "Aug 2024 - Apr 2025",
         "bullets": [
             "Install, configure, and maintain Red Hat Linux and VMware ESXi 8 environments, identifying and remediating vulnerabilities.",
             "Automate system administration tasks using Ansible and Bash scripting to improve efficiency and security.",
@@ -84,7 +104,7 @@
     {
         "title": "Student IT Administrator",
         "company": "Colorado State University",
-        "dates": "FEb 2017 - Jun 2021",
+        "dates": "Feb 2017 - Jun 2021",
         "bullets": [
             "Service and troubleshoot computer and network systems for about 4300 administrative staff.",
             "Configure and deploy desktop, laptop, and mobile devices using SmartDeploy imaging software.",
