@@ -173,7 +173,40 @@ a { color: inherit; }
   box-shadow: 0 1px 3px var(--shadow);
 }
 .card-header { margin-bottom: 0.5rem; }
+.card-header-top {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+.card-header-text { flex: 1; min-width: 0; }
 .card-header h3 { margin: 0 0 0.35rem; font-size: 1.1rem; background: none; color: var(--text); display: block; padding: 0; }
+
+.company-logo {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  object-fit: contain;
+  background: var(--background);
+  border: 1px solid var(--border);
+  padding: 4px;
+}
+.company-logo-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk", ui-sans-serif, sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+/* --primary is the same mid-tone in both themes, so a fixed dark
+   on-primary color reads fine either way. --secondary and --accent flip
+   from light (light theme) to dark (dark theme), which happens to track
+   --text's own light/dark flip — so --text is the right contrast pick
+   for those two rather than the fixed --on-primary. */
+.company-logo-fallback.tone-a { background: var(--primary); color: var(--on-primary); }
+.company-logo-fallback.tone-b { background: var(--secondary); color: var(--text); }
+.company-logo-fallback.tone-c { background: var(--accent); color: var(--text); }
 .card-meta {
   display: flex;
   justify-content: space-between;

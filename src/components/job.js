@@ -1,13 +1,19 @@
 import { el } from "../lib/dom.js";
 import { SkillsModal, skillsTitle } from "./skillsModal.js";
+import { CompanyLogo } from "./companyLogo.js";
 
 export function Job(job) {
   return el("article", { class: "card" }, [
     el("header", { class: "card-header" }, [
-      el("h3", {}, job.title),
-      el("div", { class: "card-meta" }, [
-        el("span", { class: "card-company" }, job.company),
-        el("span", { class: "card-dates" }, job.dates),
+      el("div", { class: "card-header-top" }, [
+        CompanyLogo(job),
+        el("div", { class: "card-header-text" }, [
+          el("h3", {}, job.title),
+          el("div", { class: "card-meta" }, [
+            el("span", { class: "card-company" }, job.company),
+            el("span", { class: "card-dates" }, job.dates),
+          ]),
+        ]),
       ]),
     ]),
     el(

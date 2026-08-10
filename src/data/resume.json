@@ -17,7 +17,8 @@
             "Linux System Administration",
             "Troubleshooting",
             "Technical Documentation"
-        ]
+        ],
+        "logo": "/logos/redhat.png"
     },
     {
         "title": "Associate Principal Systems Administrator",
@@ -40,7 +41,8 @@
             "DISA STIG",
             "Ansible",
             "Qumulo"
-        ]
+        ],
+        "logo": "/logos/parsons.png"
     },
     {
         "title": "Senior Information Technology Specialist",
@@ -72,7 +74,8 @@
             "Office365",
             "AWS EC2 / RDS",
             "Bash"
-        ]
+        ],
+        "logo": "/logos/scitec.png"
     },
     {
         "title": "Third Level Support Engineer",
@@ -99,7 +102,8 @@
             "Communication",
             "Red Hat Enterprise Linux",
             "Ubuntu"
-        ]
+        ],
+        "logo": "/logos/hp.png"
     },
     {
         "title": "Student IT Administrator",
@@ -117,7 +121,8 @@
             "Customer Support",
             "Office 365",
             "Communication"
-        ]
+        ],
+        "logo": "/logos/csu.png"
     },
     {
         "title": "Desktop Support Technician",
@@ -128,7 +133,8 @@
         ],
         "skills": [
             "Communication"
-        ]
+        ],
+        "logo": "/logos/ferguson-high.png"
     },
     {
         "title": "Software Engineer (Mentee)",
@@ -140,6 +146,7 @@
         ],
         "skills": [
             "Communication"
-        ]
+        ],
+        "logo": "/logos/miami-dade-county.png"
     }
 ]
