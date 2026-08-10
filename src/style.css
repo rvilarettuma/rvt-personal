@@ -1,0 +1,323 @@
+/* ---------------------------------------------------------------------
+   Theme tokens
+   --------------------------------------------------------------------- */
+:root[data-theme="light"] {
+  --text: #161810;
+  --background: #f8f9f6;
+  --primary: #8d9c63;
+  --secondary: #aac7a9;
+  --accent: #8fb79a;
+
+  /* Derived tokens (not requested directly, but needed by the rest of
+     the sheet) — kept close to the source palette rather than computed,
+     so contrast can be checked by eye against the four colors above. */
+  --on-primary: #14170d;
+  --text-muted: #5b6350;
+  --surface: #eef1e9;
+  --border: rgba(22, 24, 16, 0.14);
+  --shadow: rgba(22, 24, 16, 0.1);
+  --blob-opacity: 0.35;
+}
+
+:root[data-theme="dark"] {
+  --text: #edefe7;
+  --background: #080906;
+  --primary: #8d9c63;
+  --secondary: #395638;
+  --accent: #487053;
+
+  --on-primary: #10130a;
+  --text-muted: #aab39c;
+  --surface: #14170f;
+  --border: rgba(237, 239, 231, 0.14);
+  --shadow: rgba(0, 0, 0, 0.55);
+  --blob-opacity: 0.28;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: "Space Mono", ui-monospace, monospace;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.app { min-height: 100%; position: relative; }
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+  position: relative;
+}
+
+h1, h2, h3 {
+  font-family: "Space Grotesk", ui-sans-serif, sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  background: var(--primary);
+  color: var(--on-primary);
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  background: var(--primary);
+  color: var(--on-primary);
+  display: inline-block;
+  padding: 0.35rem 0.6rem;
+  margin: 0 0 1rem;
+}
+
+p { line-height: 1.6; }
+
+a { color: inherit; }
+
+/* Header ---------------------------------------------------------------- */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.5rem 0 0;
+}
+.site-header h1 { margin: 0; }
+
+/* Sections ------------------------------------------------------------ */
+.section { margin: 2.5rem 0; }
+
+/* Typewriter ------------------------------------------------------------ */
+.typewriter {
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+  font-size: 1.4rem;
+  min-height: 1.8em;
+  color: var(--text);
+}
+.typewriter-cursor {
+  margin-left: 2px;
+  color: var(--accent);
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .typewriter-cursor { animation: none; }
+}
+
+/* Buttons / icon buttons ------------------------------------------------ */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.icon-button:hover,
+.icon-button:focus-visible { background: var(--surface); }
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  text-decoration: none;
+}
+.button-solid {
+  background: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+}
+.button-outline {
+  background: transparent;
+  color: var(--text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Cards (resume jobs) ---------------------------------------------------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px var(--shadow);
+}
+.card-header { margin-bottom: 0.5rem; }
+.card-header h3 { margin: 0 0 0.35rem; font-size: 1.1rem; background: none; color: var(--text); display: block; padding: 0; }
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.card-bullets { margin: 0.75rem 0; padding-left: 1.2rem; }
+.card-bullets li { margin-bottom: 0.35rem; line-height: 1.5; }
+.card-actions { margin-top: 0.75rem; }
+
+/* Skills modal (native <dialog>) ----------------------------------------- */
+.skills-dialog {
+  border: none;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: min(90vw, 420px);
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 8px 30px var(--shadow);
+}
+.skills-dialog::backdrop { background: rgba(0, 0, 0, 0.45); }
+.skills-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+.skills-dialog-header h3 { margin: 0; background: none; color: var(--text); display: block; padding: 0; }
+.skills-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.skills-list li {
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+}
+
+/* Projects (native <details>) -------------------------------------------- */
+.project {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+}
+.project summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  position: relative;
+}
+.project summary::-webkit-details-marker { display: none; }
+.project summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.25rem;
+  top: 1rem;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+.project[open] summary::after { content: "\2212"; }
+.project-stack { color: var(--text-muted); font-size: 0.85rem; }
+.project-body { padding: 0 1.25rem 1.25rem; }
+.project-links { display: flex; gap: 0.75rem; margin-top: 0.75rem; }
+
+/* Footer ------------------------------------------------------------- */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 3rem 0 1rem;
+}
+.footer { text-align: center; margin-bottom: 0.5rem; }
+.footer-icons { display: flex; justify-content: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+.footer-copyright { color: var(--text-muted); font-size: 0.85rem; }
+
+/* ---------------------------------------------------------------------
+   Background — soft blurred color fields, one of which follows the
+   cursor. Fixed + negative z-index so it sits behind all page content
+   but above the flat body background. Pure CSS/JS, no images.
+   --------------------------------------------------------------------- */
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: var(--blob-opacity);
+  will-change: transform;
+}
+
+.bg-blob-1 {
+  width: 42vmax;
+  height: 42vmax;
+  top: -14vmax;
+  left: -12vmax;
+  background: var(--primary);
+  animation: drift-1 26s ease-in-out infinite;
+}
+
+.bg-blob-2 {
+  width: 36vmax;
+  height: 36vmax;
+  bottom: -16vmax;
+  right: -10vmax;
+  background: var(--secondary);
+  animation: drift-2 32s ease-in-out infinite;
+}
+
+.bg-blob-cursor {
+  width: 26vmax;
+  height: 26vmax;
+  left: var(--cursor-x, 50vw);
+  top: var(--cursor-y, 40vh);
+  background: var(--accent);
+  opacity: calc(var(--blob-opacity) * 0.8);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s ease, left 0.12s linear, top 0.12s linear;
+}
+
+@keyframes drift-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(4vmax, 3vmax) scale(1.08); }
+}
+@keyframes drift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-3vmax, -4vmax) scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-blob-1, .bg-blob-2 { animation: none; }
+  .bg-blob-cursor { display: none; }
+}
+
+@media (max-width: 600px) {
+  /* Cursor-follow is a mouse affordance; hide it on touch-first widths
+     where there's no persistent pointer to react to. */
+  .bg-blob-cursor { display: none; }
+}
