@@ -29,7 +29,7 @@ export function SkillsModal(title, skills) {
       class: "button button-outline",
       onClick: () => dialog.showModal(),
     },
-    [el("span", { class: "icon", "aria-hidden": "true" }, "\u25C6"), " ", title]
+    [el("span", { class: "icon", "aria-hidden": "true" }, "\u25C6"), title]
   );
 
   // Clicking the backdrop (outside the dialog's own box) closes it.
